@@ -13,15 +13,17 @@ export default function SectionCard({
   showPrice = true,
   showButton = true,
   centerText = false,
+  sectionStyles,
+  imgSize,
 }) {
   return (
-    <Card className="w-full">
+    <Card className={`w-full ${sectionStyles}`}>
       <CardContent className={`p-4 ${centerText ? "text-center" : ""}`}>
         <CardHeader className="p-0">
           <img
             src={section.imgSrc}
             alt={section.title}
-            className="w-full h-40 object-cover mb-2"
+            className= {`w-full ${imgSize} object-contain mb-2`}
           />
           <CardTitle className="text-base">{section.title}</CardTitle>
           <CardDescription className="text-sm">

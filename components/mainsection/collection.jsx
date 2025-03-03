@@ -4,45 +4,45 @@ export default function MainCollection() {
   const sections = [
     {
       id: 1,
-      title: "Section 1",
-      description: "Section 1 Description",
+      title: "Hero Banner Pro",
+      description: "Full-width hero with animations",
       price: "25.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg1.svg",
     },
     {
       id: 2,
-      title: "Section 2",
-      description: "Section 2 Description",
+      title: "Product Gallery",
+      description: "Masonry layout product display",
       price: "30.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg2.svg",
     },
     {
       id: 3,
-      title: "Section 3",
-      description: "Section 3 Description",
+      title: "Testomonial Slider",
+      description: "Slider of  customer reviews",
       price: "35.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg3.svg",
     },
     {
       id: 4,
-      title: "Section 4",
-      description: "Section 4 Description",
+      title: "Featured Sections",
+      description: "Highlight your best offerings",
       price: "40.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg4.svg",
     },
     {
       id: 5,
-      title: "Section 5",
-      description: "Section 5 Description",
+      title: "Newsletter Plus",
+      description: "Convert visitors to buyers",
       price: "45.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg5.svg",
     },
     {
       id: 6,
-      title: "Section 6",
-      description: "Section 6 Description",
+      title: "FAQ Accordion",
+      description: "Organized Q&A for your store",
       price: "50.00$",
-      imgSrc: "/placeholder1.png",
+      imgSrc: "/svg6.svg",
     },
   ];
 
@@ -53,7 +53,13 @@ export default function MainCollection() {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-2">
         {sections.map((section) => (
-          <SectionCard key={section.id} section={section} />
+          <SectionCard 
+          key={section.id} 
+          section={section}
+          showPrice={true}
+          showButton={true}
+          centerText={false}
+          imgSize="h-full" />
         ))}
       </div>
     </div>

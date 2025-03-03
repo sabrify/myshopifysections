@@ -35,15 +35,16 @@ export default function MobileNav({ navigation, pathname }) {
           <Link href="/" className="flex items-center space-x-2">
             <span className="sr-only">My shopify sections</span>
             <div className="flex items-center h-8 w-auto font-bold text-xl">
+              <span>MY</span>
               <img
                 src="/shopify_glyph_black.svg"
-                className="w-10 h-10 block dark:hidden"
+                className="w-8 h-8 block dark:hidden"
               />
               <img
-                src="/shopify_glyph_white.svg"
-                className="w-10 h-10 hidden dark:block"
+                src="/shopify_glyph_emerald.svg"
+                className="w-8 h-8 hidden dark:block"
               />
-              <h1 className="">MY SECTIONS</h1>
+              <h1 className="">ECTIONS</h1>
             </div>
           </Link>
         </div>

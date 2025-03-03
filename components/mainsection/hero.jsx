@@ -18,7 +18,7 @@ export default function Hero() {
         Level Up Your Shopify Store With <br />
         Custom Sections!
       </h1>
-      <p>
+      <p className="text-muted-foreground" > 
         Create custom sections for your Shopify store with ease. No coding
         required!
       </p>
