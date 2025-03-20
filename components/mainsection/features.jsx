@@ -23,8 +23,9 @@ export default function Features() {
   ];
 
   return (
-    <div className=" py-10 bg-background">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-2">
+    <div className="bg-background">
+      <div className=" py-10 mx-10  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-2 ">
         {sections.map((section) => (
           
           <SectionCard
@@ -41,5 +42,7 @@ export default function Features() {
         ))}
       </div>
     </div>
+    </div> 
+    
   );
 }
