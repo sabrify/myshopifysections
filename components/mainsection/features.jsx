@@ -1,23 +1,23 @@
-import SectionCard from "@/components/custom/sectioncard";
+import ProductCard from "@/components/custom/product-card";
 
 export default function Features() {
-  const sections = [
+  const products = [
     {
       id: 1,
       title: "Easy to install",
-      description: "Section 1 Description",
+      description: "Product 1 Description",
       imgSrc: "/tool.svg",
     },
     {
       id: 2,
       title: "Fully responsive",
-      description: "Section 2 Description",
+      description: "Product 2 Description",
       imgSrc: "/phone.svg",
     },
     {
       id: 3,
       title: "No code required",
-      description: "Section 3 Description",
+      description: "Product 3 Description",
       imgSrc: "/magic.svg",
     },
   ];
@@ -26,12 +26,12 @@ export default function Features() {
     <div className="bg-background">
       <div className=" py-10 mx-10  ">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto p-2 ">
-        {sections.map((section) => (
+        {products.map((product) => (
           
-          <SectionCard
-          sectionStyles = "bg-secondary"
-          key={section.id}
-          section={section}
+          <ProductCard
+          productStyles = "bg-secondary"
+          key={product.id}
+          product={product}
           showPrice={false}
           showButton={false}
           centerText={true}

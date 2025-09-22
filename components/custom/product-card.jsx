@@ -7,45 +7,53 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
-export default function SectionCard({
-  section,
+export default function ProductCard({
+  product,
   showPrice = true,
   showButton = true,
   centerText = false,
-  sectionStyles,
+  productStyles,
   imgSize,
 }) {
   return (
-    <Card className={`w-full ${sectionStyles}`}>
+    <Card className={`w-full ${productStyles}`}>
+      <Link href={`/products/${product.slug}`} passHref>
       <CardContent className={`p-4 ${centerText ? "text-center" : ""}`}>
         <CardHeader className="p-0">
           <img
-            src={section.imgSrc}
-            alt={section.title}
+            src={product.imgSrc}
+            alt={product.title}
             className= {`w-full ${imgSize} object-contain mb-2`}
           />
-          <CardTitle className="text-base">{section.title}</CardTitle>
+          <CardTitle className="text-base">{product.title}</CardTitle>
           <CardDescription className="text-sm">
-            {section.description}
+            {product.description}
           </CardDescription>
         </CardHeader>
       </CardContent>
+       </Link>
       <CardFooter className="flex justify-between p-4">
         {showPrice && (
           <p
             className="text-sm font-semibold"
             style={{ color: "var(--price-text)" }}
           >
-            {section.price}
+            {product.price}
           </p>
         )}
         {showButton && (
-          <Button className="text-sm" variant="secondary">
-            Preview
-          </Button>
+         
+           <Link href={product.previewUrl || "#"} passHref>
+            <Button asChild variant="secondary" className="text-sm">
+              <span>Preview</span>
+            </Button>
+          </Link>
+         
         )}
       </CardFooter>
     </Card>
+   
   );
 }

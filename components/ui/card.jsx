@@ -28,7 +28,6 @@ function CardHeader({
       {...props} />
   );
 }
-
 function CardTitle({
   className,
   ...props
