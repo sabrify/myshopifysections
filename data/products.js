@@ -12,6 +12,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/hero-banner-pro/",
     collection: "shopify",
     subcollection: "banners",
+    features:["Responsive Design", "Customizable Layout", "SEO Optimized"],
+    reviews: 120,
+    rating: 4.5
   },
   {
     id: 2,
@@ -25,6 +28,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/product-gallery/",
     collection: "shopify",
     subcollection: "galleries",
+    features:["Lightbox View", "Filter Options", "Quick View"],
+    reviews: 85,
+    rating: 4.0
   },
   {
     id: 3,
@@ -38,6 +44,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/testomonial-slider/",
     collection: "shopify",
     subcollection: "sliders",
+    features:["Auto-play", "Navigation Arrows", "Customizable Speed"],
+    reviews: 60,
+    rating: 4.2
   },
   {
     id: 4,
@@ -51,6 +60,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/featured-sections/",
     collection: "shopify",
     subcollection: "features",
+    features:["Multiple Layouts", "Image & Text", "Call to Action"],
+    reviews: 95,
+    rating: 4.7
   },
   {
     id: 5,
@@ -64,6 +76,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/newsletter-plus/",
     collection: "shopify",
     subcollection: "newsletters",
+    features:["Email Integration", "Custom Forms", "Responsive Design"],
+    reviews: 110,
+    rating: 4.8
   },
   {
     id: 6,
@@ -77,6 +92,9 @@ const products = [
     previewUrl: "https://myshopifysections.github.io/faq-accordion/",
     collection: "shopify",
     subcollection: "faqs",
+    features:["Collapsible Items", "Search Functionality", "Customizable Styles"],
+    reviews: 70,
+    rating: 4.3
   },
 ];
 
