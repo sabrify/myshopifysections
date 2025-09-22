@@ -8,7 +8,8 @@ import MobileNav from "./mobile-menu";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Sections", href: "/sections" },
+  { name: "Sections", href: "/collection/shopify" },
+  { name: "Automations", href: "/collection/n8n" },
   { name: "Support", href: "/support" },
 ];
 

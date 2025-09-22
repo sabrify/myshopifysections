@@ -9,7 +9,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "hero-banner-pro",
-    preview: "https://myshopifysections.github.io/hero-banner-pro/",
+    previewUrl: "https://myshopifysections.github.io/hero-banner-pro/",
+    collection: "shopify",
+    subcollection: "banners",
   },
   {
     id: 2,
@@ -20,7 +22,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "product-gallery",
-    preview: "https://myshopifysections.github.io/product-gallery/",
+    previewUrl: "https://myshopifysections.github.io/product-gallery/",
+    collection: "shopify",
+    subcollection: "galleries",
   },
   {
     id: 3,
@@ -31,7 +35,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "testomonial-slider",
-    preview: "https://myshopifysections.github.io/testomonial-slider/",
+    previewUrl: "https://myshopifysections.github.io/testomonial-slider/",
+    collection: "shopify",
+    subcollection: "sliders",
   },
   {
     id: 4,
@@ -42,7 +48,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "featured-sections",
-    preview: "https://myshopifysections.github.io/featured-sections/",
+    previewUrl: "https://myshopifysections.github.io/featured-sections/",
+    collection: "shopify",
+    subcollection: "features",
   },
   {
     id: 5,
@@ -53,7 +61,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "newsletter-plus",
-    preview: "https://myshopifysections.github.io/newsletter-plus/",
+    previewUrl: "https://myshopifysections.github.io/newsletter-plus/",
+    collection: "shopify",
+    subcollection: "newsletters",
   },
   {
     id: 6,
@@ -64,7 +74,9 @@ const products = [
     popular: true,
     type: "section",
     slug: "faq-accordion",
-    preview: "https://myshopifysections.github.io/faq-accordion/",
+    previewUrl: "https://myshopifysections.github.io/faq-accordion/",
+    collection: "shopify",
+    subcollection: "faqs",
   },
 ];
 

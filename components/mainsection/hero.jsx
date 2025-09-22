@@ -1,4 +1,5 @@
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -22,7 +23,10 @@ export default function Hero() {
         Create custom sections for your Shopify store with ease. No coding
         required!
       </p>
-      <Button className={"my-4"}>Explore Sections!</Button>
+      <Button className={"my-4"}>
+        <Link href={"/collection/shopify"} >
+        Explore Sections!
+        </Link></Button>
     </div>
   );
 }

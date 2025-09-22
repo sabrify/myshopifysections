@@ -13,6 +13,7 @@ export default function ProductCard({
   product,
   showPrice = true,
   showButton = true,
+  showfooter = true,
   centerText = false,
   productStyles,
   imgSize,
@@ -34,7 +35,8 @@ export default function ProductCard({
         </CardHeader>
       </CardContent>
        </Link>
-      <CardFooter className="flex justify-between p-4">
+       {showfooter && ( 
+        <CardFooter className="flex justify-between p-4">
         {showPrice && (
           <p
             className="text-sm font-semibold"
@@ -53,6 +55,8 @@ export default function ProductCard({
          
         )}
       </CardFooter>
+        )}
+      
     </Card>
    
   );
