@@ -19,7 +19,7 @@ export default function ProductCard({
   imgSize,
 }) {
   return (
-    <Card className={`w-full ${productStyles}`}>
+    <Card className={`w-full ${productStyles} z-10 pixel-border`}>
       <Link href={`/products/${product.slug}`} passHref>
       <CardContent className={`p-4 ${centerText ? "text-center" : ""}`}>
         <CardHeader className="p-0">

@@ -11,21 +11,18 @@ export default function DesktopNav({ navigation, pathname }) {
       aria-label="Global"
     >
       <div className="flex flex-1">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="sr-only">My Shopify Sections</span>
-          <div className="flex items-center h-8 w-auto font-bold text-xl">
-          <span>MY</span>
+        <Link href="/" className="flex items-center space-x-2 mb-6">
+          
+          
+          {/* <span>MY</span> */}
+            
             <img
-              src="/shopify_glyph_black.svg"
-              className="w-8 h-8 block dark:hidden color"
-            />
-            <img
-              src="/shopify_glyph_emerald.svg"
-              className="w-8 h-8 hidden dark:block"
+              src="/mysections-dark.png"
+              className="h-16 hidden dark:block"
             />
 
-            <h1 className="">ECTIONS</h1>
-          </div>
+            {/* <h1 className="">ECTIONS</h1> */}
+          
         </Link>
       </div>
       <div className="flex gap-x-8">
@@ -45,7 +42,7 @@ export default function DesktopNav({ navigation, pathname }) {
       </div>
       <div className="flex flex-1 justify-end">
         <div className="flex justify-end ">
-          <Button
+          {/* <Button
             variant="outline"
             size="icon"
             onClick={toggleTheme}
@@ -53,7 +50,7 @@ export default function DesktopNav({ navigation, pathname }) {
           >
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 block dark:hidden" />
             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 hidden dark:block " />
-          </Button>
+          </Button> */}
         </div>
       </div>
     </nav>

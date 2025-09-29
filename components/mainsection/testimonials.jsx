@@ -33,7 +33,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className="bg-secondary">
+    <div className="bg-secondary ">
 <div className="mx-10  py-10">
         <h1 className="text-center text-lg font-semibold mb-10">
         What Merchants Say</h1>
@@ -45,7 +45,7 @@ export default function Testimonials() {
             description={testimonial.description}
             name={testimonial.name}
             industry={testimonial.industry}
-            sectionStyles="bg-background"
+            sectionStyles="bg-background z-10"
             starColor= "text-emerald-400"
           />
         ))}

@@ -2,12 +2,14 @@ import Link from "next/link"
 export default function Footer(){
     return(
         <footer className="border-t bg-background">
-            <div className="mx-10 flex lg:flex-row max-md:flex-col items-start justify-around gap-10  py-8">
+            <div className="mx-10 flex lg:flex-row max-md:flex-col items-start justify-around gap-10  py-8 z-10">
                <div className="flex flex-col">
                 <div className="logo-container flex flex-row">
-                    <span>MY</span>
-                    <img src="/shopify_glyph_emerald.svg" alt="Shopify Logo" className="w-8 h-8"/>
-                    <h1>ECTIONS</h1>
+                    
+<img
+              src="/mysections-dark.png"
+              className="h-16 hidden dark:block"
+            />      
                 </div>
                 <p className="text-muted-foreground"> Level up your Shopify store with <br />
                 our custom sections.</p>

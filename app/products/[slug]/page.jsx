@@ -1,9 +1,9 @@
 import products from "@/data/products";
-import ProductCard from "@/components/custom/product-card";
 import Navbar from "@/components/navigation/navbar";
 import Footer from "@/components/navigation/desktop-footer";
 import ProductGallery from "@/components/custom/product-gallery";
 import ProductInfo from "@/components/custom/product-info";
+import RelatedProducts from "@/components/custom/realated-products";
 
 export default async function ProductPage({ params }) {
   const { slug } = await params;
@@ -21,7 +21,8 @@ export default async function ProductPage({ params }) {
         </div>
         {/* <ProductTabs />
         <TrustSignals />
-        <RelatedProducts/> */}
+         */}
+         <RelatedProducts product={product} products ={products}/>
       </main>
       <Footer />
     </div>

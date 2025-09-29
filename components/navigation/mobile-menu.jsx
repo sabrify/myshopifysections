@@ -19,7 +19,7 @@ export default function MobileNav({ navigation, pathname }) {
         className="mx-auto flex max-w-7xl items-center justify-between p-4"
         aria-label="Global"
       >
-        <div className="flex justify-start">
+        {/* <div className="flex justify-start">
           <Button
             variant="outline"
             size="icon"
@@ -29,23 +29,19 @@ export default function MobileNav({ navigation, pathname }) {
             <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0 block dark:hidden" />
             <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 hidden dark:block " />
           </Button>
-        </div>
+        </div> */}
 
         <div className="flex flex-1 justify-center">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="sr-only">My shopify sections</span>
-            <div className="flex items-center h-8 w-auto font-bold text-xl">
-              <span>MY</span>
+            
+         
+              
               <img
-                src="/shopify_glyph_black.svg"
-                className="w-8 h-8 block dark:hidden"
-              />
-              <img
-                src="/shopify_glyph_emerald.svg"
-                className="w-8 h-8 hidden dark:block"
-              />
-              <h1 className="">ECTIONS</h1>
-            </div>
+              src="/mysections-dark.png"
+              className="h-14 hidden dark:block"
+            />
+              
+            
           </Link>
         </div>
 

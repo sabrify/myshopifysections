@@ -1,13 +1,15 @@
 import { Badge } from "@/components/ui/badge";
 import { Star, Shield, Download, Users, Clock } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function ProductInfo({ product }) {
   const feature = product.features || [];
   return (
     <div className="space-y-6">
       {/* product title and ratings */}
-      <div>
+      <div className="z-11">
         <div className="flex items-center gap-2 mb-2">
           <Badge variant="secondary">Best Seller</Badge>
           <Badge variant="outline">Digital Download</Badge>
@@ -40,7 +42,7 @@ export default function ProductInfo({ product }) {
         {/* pricing */}
         <div className="space-y-2">
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-bold text-primary">
+            <span className="text-3xl font-bold " style={{ color: "var(--price-text)" }}>
               {product.price}
             </span>
           </div>
@@ -60,6 +62,59 @@ export default function ProductInfo({ product }) {
             ))}
           </ul>
         </div>
+        {/* Purchase Actions */}
+        <div className="space-y-3">
+          
+        <Link href={product.buyUrl || "#"} passHref > 
+        <Button size="lg" className="w-full cursor-pointer mb-4"> 
+          
+          <Download className="h-4 w-4 mr-2" />
+          
+          Buy Now - Instant Download
+         
+        </Button>
+         </Link>
+        
+          <Link href={product.previewUrl}>
+        <Button variant="outline" size="lg" className="w-full bg-transparent cursor-pointer">
+         Preview
+        </Button>
+        </Link>
+      </div>
+      {/* Trust Indicators */}
+        <div className="flex items-center justify-between text-xs text-muted-foreground bg-muted/50 rounded-lg p-3">
+        <div className="flex items-center gap-1">
+          <Shield className="h-3 w-3" />
+          <span>Secure payment</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <Download className="h-3 w-3" />
+          <span>Instant download</span>
+        </div>
+        <div className="flex items-center gap-1">
+          <Clock className="h-3 w-3" />
+          <span>30-day guarantee</span>
+        </div>
+      </div>
+            {/* Product Details */}
+      <div className="space-y-2 text-sm">
+        <div className="flex justify-between">
+          <span className="text-muted-foreground">File format:</span>
+          <span>React, TypeScript, Figma</span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-muted-foreground">File size:</span>
+          <span>45.2 MB</span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-muted-foreground">Last updated:</span>
+          <span>December 2024</span>
+        </div>
+        <div className="flex justify-between">
+          <span className="text-muted-foreground">License:</span>
+          <span>Commercial use allowed</span>
+        </div>
+      </div>
       </div>
     </div>
   );

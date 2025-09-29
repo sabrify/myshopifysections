@@ -46,8 +46,6 @@ export default function ProductGallery({images = []}) {
 
         ))}
         
-           
-        
         </div>
     </div>;
 }

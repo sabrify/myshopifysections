@@ -8,7 +8,7 @@ import Footer from "@/components/navigation/desktop-footer";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-b from-[var(--gradient-start)] to-[var(--gradient-end)]">
+    <main>
       <Navbar />
       <Hero />
       <MainCollection />

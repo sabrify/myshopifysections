@@ -2,7 +2,6 @@
 
 @plugin "tailwindcss-animate";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
   --font-sans: var(--font-geist-sans);
@@ -46,6 +45,9 @@
   --logo-light: url('/public/shopify_glyph_white.svg');
   --logo-dark: url('/public/shopify_glyph_black.svg');
   --price-text: oklch(18.94% 0.0562 154.88);
+  --star-color: oklch(0.3 0 0);       /* dark gray stars on light bg */
+  --plus-color: oklch(0.5 0.05 250); /* subtle bluish for plus signs */
+  --trail-color: oklch(0.4 0.1 280); /* purple-ish trails */
 }
 
 .dark {
@@ -85,6 +87,9 @@
   --price-text: oklch(87.83% 0.2176 154.88);
   --gradient-start: oklch(0.129 0.042 264.695);
   --gradient-end: oklch(0.279 0.041 260.031);
+  --star-color: oklch(0.95 0 0);   /* bright white on dark bg */
+  --plus-color: oklch(0.85 0.1 250); /* cyan-ish */
+  --trail-color: oklch(0.75 0.15 280); /* purple-ish */
 
 }
 
@@ -126,6 +131,7 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+
 
 @layer base {
   * {
