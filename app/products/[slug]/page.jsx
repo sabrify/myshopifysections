@@ -4,6 +4,8 @@ import Footer from "@/components/navigation/desktop-footer";
 import ProductGallery from "@/components/custom/product-gallery";
 import ProductInfo from "@/components/custom/product-info";
 import RelatedProducts from "@/components/custom/realated-products";
+import { HowItWorksSection } from "@/components/custom/howitworks";
+import MiniHowItWorks from "@/components/custom/minihowitworks";
 
 export default async function ProductPage({ params }) {
   const { slug } = await params;
@@ -22,6 +24,8 @@ export default async function ProductPage({ params }) {
         {/* <ProductTabs />
         <TrustSignals />
          */}
+         {/* <HowItWorksSection /> */}
+         <MiniHowItWorks />
          <RelatedProducts product={product} products ={products}/>
       </main>
       <Footer />

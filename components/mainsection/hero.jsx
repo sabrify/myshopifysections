@@ -25,7 +25,7 @@ export default function Hero() {
             variant="outline"
             
           >
-            <Link href="/how-it-works">See How It Works</Link>
+            <Link href="/howitworks">See How It Works</Link>
           </Button>
         </div>
       </div>

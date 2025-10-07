@@ -21,6 +21,10 @@ const products = [
       "Call to Action",
       "Video Background",
     ],
+    details: [
+      { label: "File format", value: "React, TypeScript, Figma" },
+      { label: "File size", value: "45.2 MB" },
+    ],
     reviews: 120,
     rating: 4.5,
   },

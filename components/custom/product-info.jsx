@@ -3,6 +3,7 @@ import { Star, Shield, Download, Users, Clock } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import ProducDetails from "./product-details";
 
 export default function ProductInfo({ product }) {
   const feature = product.features || [];
@@ -97,24 +98,7 @@ export default function ProductInfo({ product }) {
         </div>
       </div>
             {/* Product Details */}
-      <div className="space-y-2 text-sm">
-        <div className="flex justify-between">
-          <span className="text-muted-foreground">File format:</span>
-          <span>React, TypeScript, Figma</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-muted-foreground">File size:</span>
-          <span>45.2 MB</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-muted-foreground">Last updated:</span>
-          <span>December 2024</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-muted-foreground">License:</span>
-          <span>Commercial use allowed</span>
-        </div>
-      </div>
+      <ProducDetails product={product}/>
       </div>
     </div>
   );

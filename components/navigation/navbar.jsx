@@ -10,6 +10,7 @@ const navigation = [
   { name: "About", href: "/about" },
   { name: "Sections", href: "/collection/shopify" },
   { name: "Automations", href: "/collection/n8n" },
+   { name: "How It Works", href: "/howitworks" },
   { name: "Support", href: "/support" },
 ];
 
