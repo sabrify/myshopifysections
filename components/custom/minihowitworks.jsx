@@ -6,9 +6,9 @@ import Link from "next/link"
 
 export default function MiniHowItWorks() {
   const steps = [
-    { icon: Mail, title: "Get the code" },
-    { icon: Clipboard, title: "Copy & Paste" },
-    { icon: Paintbrush, title: "Add & Style" },
+    { icon: Mail, number:"1", title: "Get the code" },
+    { icon: Clipboard, number:"2", title: "Copy & Paste" },
+    { icon: Paintbrush, number:"3", title: "Add & Style" },
   ]
 
   return (
@@ -22,12 +22,17 @@ export default function MiniHowItWorks() {
         </p>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {steps.map(({ icon: Icon, title }, i) => (
+          {steps.map(({ icon: Icon, title, number }, i) => (
             <Card
               key={i}
               className="p-6 border-gray-700 bg-secondary/30 hover:border-[#00ff94] transition-all duration-300"
             >
+                                {/* Step Number */}
+                <div className="mb-4 inline-block rounded-md bg-[#00ff94]/10 px-3 py-1 font-mono text-sm font-bold text-[#00ff94] text-start">
+                  {number}
+                </div>
               <div className="flex flex-col items-center gap-3">
+              
                 <div className="h-12 w-12 flex items-center justify-center rounded-lg bg-[#00ff94]/10">
                   <Icon className="h-6 w-6 text-[#00ff94]" />
                 </div>
@@ -38,12 +43,12 @@ export default function MiniHowItWorks() {
         </div>
 
         <div className="mt-10">
-          <Link href="/how-it-works">
+          <Link href="/collection/shopify">
             <Button
               size="lg"
               className="bg-[#00ff94] text-[#0a0e14] hover:bg-[#00ff94]/90 font-bold"
             >
-              Learn more
+              Explore Sections
             </Button>
           </Link>
         </div>
